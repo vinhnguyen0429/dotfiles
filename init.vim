@@ -38,7 +38,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
-
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 "Config Section
@@ -107,10 +107,10 @@ let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', '
 
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <Leader>gd <Plug>(coc-definition)
+nmap <Leader>gy <Plug>(coc-type-definition)
+nmap <Leader>gi <Plug>(coc-implementation)
+nmap <Leader>gr <Plug>(coc-references)
 
 " type <Space>w to save file (lot faster than :w<Enter>):
 nnoremap <Leader>w :w<CR>
@@ -122,4 +122,9 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
+
+
+"Emmet Tab
+let g:user_emmet_expandabbr_key='<Tab>'
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
