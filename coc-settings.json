@@ -1,0 +1,24 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "json",
+        "javascriptreact",
+        "sass",
+        "scss",
+        "php",
+        "css"
+    ],
+    "eslint.filetypes": ["javascript", "php", "javascriptreact", "scss"],
+    "coc.preferences.diagnostic.virtualText": true,
+    "prettier.tabWidth": 4,
+    "languageserver": {
+        "intelephense": {
+            "command": "intelephense",
+            "args": ["--stdio"],
+            "filetypes": ["php"],
+            "initializationOptions": {
+                "storagePath": "/tmp/intelephense"
+            }
+        }
+    }
+}
