@@ -50,7 +50,11 @@ Plug 'salcode/vim-wordpress-dict'
 Plug 'sudar/vim-wordpress-snippets'
 "LSP
 :Plug 'neovim/nvim-lsp'
-
+" Git
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 
 call plug#end()
 
