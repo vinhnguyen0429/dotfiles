@@ -1,4 +1,4 @@
-# dotfiles
+# nvim
 
 ### Requirements
 - Requires [Node.js 12+](https://nodejs.org)
