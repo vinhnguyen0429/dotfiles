@@ -13,7 +13,6 @@ Plug 'dracula/vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
@@ -25,6 +24,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'mattn/emmet-vim'
 
+"Make your Vim/Neovim as smart as VSCode.
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lsp'
 " Have the file system follow you around
 Plug 'airblade/vim-rooter'
 " auto set indent settings
@@ -39,7 +41,6 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'justinmk/vim-sneak'
 Plug 'unblevable/quick-scope'
 " Add some color
-Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/rainbow_parentheses.vim'
 " Better Syntax Support
 Plug 'sheerun/vim-polyglot'
@@ -48,13 +49,13 @@ Plug 'vim-php/tagbar-phpctags.vim'
 " WordPress
 Plug 'salcode/vim-wordpress-dict'
 Plug 'sudar/vim-wordpress-snippets'
-"LSP
-:Plug 'neovim/nvim-lsp'
 " Git
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
+Plug 'kdheepak/lazygit.vim'
+
 
 call plug#end()
 
