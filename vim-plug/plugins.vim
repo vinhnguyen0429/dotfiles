@@ -54,7 +54,10 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
-Plug 'kdheepak/lazygit.vim'
+" Terminal 
+Plug 'voldikss/vim-floaterm'
+"Ranger File Manager
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 
 call plug#end()

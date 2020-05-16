@@ -1,10 +1,6 @@
 "--------------------------
 "|        Settings        |
 "--------------------------
-
-" set leader key
-let g:mapleader = "\<Space>"
-
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -48,15 +44,10 @@ cmap w!! w !sudo tee %
 set splitright
 set splitbelow
 
-" turn terminal to normal mode with escape
-tnoremap <Esc> <C-\><C-n>
-" start terminal in insert mode
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-" open terminal on ctrl+n
-function! OpenTerminal()
-  split term://zsh
-  resize 10
-endfunction
-nnoremap <c-n> :call OpenTerminal()<CR>
+nnoremap <c-t> :vsplit term://zsh<CR>
 
-
+"Move around to differnt windows
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
