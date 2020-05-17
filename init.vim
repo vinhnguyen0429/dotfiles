@@ -13,4 +13,3 @@ source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/custom-lsp.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/float-term.vim
-source $HOME/.config/nvim/plug-config/ranger.vim

@@ -40,6 +40,7 @@ let g:startify_bookmarks = [
             \ '~/Local Sites/inside-bitcoin/app/public',
             \ '~/Local Sites/kryptoszene/app/public',
             \ '~/Local Sites/psychic-guild/app/public',
+            \ '/Users/vinhnguyen/Local Sites/learnbonds/app/public/wp-content/plugins/loans-lead-capture',
             \ ]
 
 let g:startify_enable_special = 0
