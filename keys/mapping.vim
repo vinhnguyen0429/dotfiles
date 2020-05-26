@@ -31,13 +31,14 @@ vnoremap > >gv
   nnoremap <silent> <S-TAB> :bprevious<CR>
 
   " Alternate way to save
-  nnoremap <silent> <C-s> :w<CR>
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
+ 
   " Alternate way to quit
-  nnoremap <silent> <C-Q> :wq!<CR>
+  nnoremap <silent> <c-q> :wq!<CR>
   " Use control-c instead of escape
-  nnoremap <silent> <C-c> <Esc>
-  " <TAB>: completion.
-  inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+  nnoremap <silent> <c-c> <Esc>
 
 
   " Better window navigation
