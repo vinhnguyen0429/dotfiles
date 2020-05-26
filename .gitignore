@@ -1,4 +1,5 @@
 plugged/
+.git/
 autoload/
 .netrwhist
 session/
