@@ -2,7 +2,6 @@ lua << EOF
 -- composer global require php-stubs/wordpress-globals
 -- composer global require php-stubs/wordpress-stubs
 -- composer global require php-stubs/woocommerce-stubs
--- composer global require php-stubs/acf-pro-stubs
 local nvim_lsp = require'nvim_lsp'
 local util = require 'nvim_lsp/util'
 nvim_lsp.intelephense.setup({
@@ -64,7 +63,6 @@ nvim_lsp.intelephense.setup({
                 "zlib",
                 "wordpress",
                 "woocommerce",
-                "acf-pro",
             },
             files = {
                 maxSize = 5000000;

@@ -41,6 +41,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'justinmk/vim-sneak'
 Plug 'unblevable/quick-scope'
 " Add some color
+Plug 'Yggdroot/indentLine'
 Plug 'junegunn/rainbow_parentheses.vim'
 " Better Syntax Support
 Plug 'sheerun/vim-polyglot'
@@ -53,10 +54,6 @@ Plug 'sudar/vim-wordpress-snippets'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
-Plug 'junegunn/gv.vim'
-" Terminal 
-Plug 'voldikss/vim-floaterm'
-
 call plug#end()
 
 " Automatically install missing plugins on startup
