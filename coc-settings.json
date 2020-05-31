@@ -1,14 +1,47 @@
 {
+    "suggest.enablePreview": true,
+    "codeLens.enable": true,
+    "coc.preferences.colorSupport": true,
+    "coc.preferences.rootPatterns": ["composer.json", "wp-content", ".git"],
+    // suggestions
+    // "suggest.echodocSupport": true,
+    // TODO add more labels and give them cool glyphs
+    "suggest.completionItemKindLabels": {
+        "text": "t",
+        "method": "m",
+        "function": ""
+    },
+    // diagnostics
+    "diagnostic.errorSign": " ",
+    "diagnostic.warningSign": " ",
+    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": " ",
+    "diagnostic.virtualText": true,
+    // list
+    "list.indicator": ">",
+    "list.selectedSignText": " ",
+
+    // autoformat
     "coc.preferences.formatOnSaveFiletypes": [
         "javascript",
-        "json",
         "javascriptreact",
         "sass",
         "scss",
         "php",
-        "css"
+        "css",
+        "html",
+        "yaml"
     ],
-    "eslint.filetypes": ["javascript", "php", "javascriptreact", "scss"],
+    "eslint.filetypes": [
+        "javascript",
+        "php",
+        "javascriptreact",
+        "scss",
+        "css",
+        "html",
+        "yaml",
+        "json"
+    ],
     "coc.preferences.diagnostic.virtualText": true,
     "prettier.tabWidth": 4,
     "languageserver": {
@@ -21,6 +54,7 @@
             }
         }
     },
+    "intelephense.licenceKey": "00FT6QI3ZAU8ZOA",
     // explorer
     "explorer.width": 30,
     "explorer.icon.enableNerdfont": true,

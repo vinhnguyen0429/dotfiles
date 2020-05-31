@@ -49,7 +49,7 @@ cmap w!! w !sudo tee %
 set splitright
 set splitbelow
 
-nnoremap <c-t> :vsplit term://zsh<CR>
+nnoremap <c-t> :Deol<CR>
 
 "Move around to differnt windows
 nnoremap <leader>h :wincmd h<CR>

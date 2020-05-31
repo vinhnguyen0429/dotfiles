@@ -21,27 +21,25 @@ vnoremap > >gv
   inoremap jk <Esc>
   inoremap kj <Esc>
 
-  " Easy CAPS
-  " inoremap <c-u> <ESC>viwUi
-  " nnoremap <c-u> viwU<Esc>
 
-  " TAB in general mode will move to text buffer
-  nnoremap <silent> <TAB> :bnext<CR>
-  " SHIFT-TAB will go back
-  nnoremap <silent> <S-TAB> :bprevious<CR>
+" TAB in general mode will move to text buffer
+nnoremap <silent> <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <silent> <S-TAB> :bprevious<CR>
 
-  " Alternate way to save
+" Alternate way to save
+
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
  
-  " Alternate way to quit
-  nnoremap <silent> <c-q> :wq!<CR>
   " Use control-c instead of escape
   nnoremap <silent> <c-c> <Esc>
 
+" Close buffer without quiting the window 
+nnoremap <Leader>q :bdelete<CR>
 
-  " Better window navigation
+" Better window navigation
   nnoremap <C-h> <C-w>h
   nnoremap <Cj> <C-w>j
   nnoremap <C-k> <C-w>k
